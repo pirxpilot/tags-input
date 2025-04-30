@@ -1,4 +1,4 @@
-const tagsInput = require('../src/tags-input');
+import tagsInput from '../src/tags-input';
 
 const tis = [];
 for (const input of document.querySelectorAll('form input')) {

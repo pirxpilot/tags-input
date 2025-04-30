@@ -1,7 +1,8 @@
 {
   "name": "@pirxpilot/tags-input",
   "version": "3.1.3",
-  "main": "src/tags-input.js",
+  "type": "module",
+  "exports": "./src/tags-input.js",
   "description": "Input field for tagged values",
   "scripts": {
     "test": "make check"

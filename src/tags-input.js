@@ -1,6 +1,4 @@
-const escapeStringRegexp = require('escape-string-regexp');
-
-module.exports = tagsInput;
+import escapeStringRegexp from 'escape-string-regexp';
 
 const BACKSPACE = 8;
 const TAB = 9;
@@ -74,7 +72,7 @@ function caretAtStart({ selectionStart, selectionEnd, value }) {
   }
 }
 
-function tagsInput(input) {
+export default function tagsInput(input) {
   const base = createElement('div', 'tags-input');
   const checker = checkerForSeparator(input.getAttribute('data-separator') || ',');
   const allowDuplicates = checkAllowDuplicates();
