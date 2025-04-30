@@ -6,13 +6,16 @@
   "scripts": {
     "test": "make check"
   },
-  "repository": "pirxpilot/tags-input",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pirxpilot/tags-input.git"
+  },
   "dependencies": {
     "escape-string-regexp": "^1.0.5"
   },
   "devDependencies": {
-    "@pirxpilot/jshint": "~3",
-    "esbuild": "^0.20.1"
+    "@biomejs/biome": "^1.9.4",
+    "esbuild": "^0.25.0"
   },
   "files": [
     "src",

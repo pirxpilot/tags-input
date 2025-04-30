@@ -29,7 +29,10 @@ distclean: clean
 check: test lint
 
 lint:
-	./node_modules/.bin/jshint $(SRC)
+	./node_modules/.bin/biome ci
+
+format:
+	./node_modules/.bin/biome check --fix
 
 test:
 	echo "No tests yet"
