@@ -12,7 +12,7 @@
     "url": "git+https://github.com/pirxpilot/tags-input.git"
   },
   "dependencies": {
-    "escape-string-regexp": "^1.0.5"
+    "escape-string-regexp": "~5"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
