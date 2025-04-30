@@ -1,5 +1,4 @@
 [![NPM version][npm-image]][npm-url]
-[![Dependency Status][gemnasium-image]][gemnasium-url]
 
 # @pirxpilot/tags-input
 
@@ -62,8 +61,3 @@ MIT Copyright (c) 2014 Jason Miller
 [npm-image]: https://img.shields.io/npm/v/@pirxpilot/tags-input.svg
 [npm-url]: https://npmjs.org/package/@pirxpilot/tags-input
 
-[travis-url]: https://travis-ci.org/pirxpilot/tags-input
-[travis-image]: https://img.shields.io/travis/pirxpilot/tags-input.svg
-
-[gemnasium-image]: https://img.shields.io/gemnasium/pirxpilot/tags-input.svg
-[gemnasium-url]: https://gemnasium.com/pirxpilot/tags-input
