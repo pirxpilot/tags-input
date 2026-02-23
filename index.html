@@ -1,105 +1,118 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Tags input</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="tags-input.css" />
+    <script src="build/build.js" defer></script>
+    <style>
+      body {
+        padding: 1em;
+      }
 
-<head>
-	<title>Tags input</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" type="text/css" href="tags-input.css">
-	<script src="build/build.js" defer></script>
-	<style>
-		body {
-			padding: 1em;
-		}
+      fieldset {
+        padding: 0;
+        border: 0;
+        margin: 1em 0;
+      }
 
-		fieldset {
-			padding: 0;
-			border: 0;
-			margin: 1em 0;
-		}
+      .forms {
+        max-width: 40em;
+        margin: auto;
+      }
 
-		.forms {
-			max-width: 40em;
-			margin: auto;
-		}
+      .tags-input {
+        width: 100%;
+        margin: 0.5em 0;
+      }
 
-		.tags-input {
-			width: 100%;
-			margin: .5em 0;
-		}
+      .tags-input input {
+        min-width: 5em;
+      }
 
-		.tags-input input {
-			min-width: 5em;
-		}
+      .value {
+        display: block;
+        color: blue;
+        font-size: 0.9em;
+        text-align: right;
+      }
 
-		.value {
-			display: block;
-			color: blue;
-			font-size: .9em;
-			text-align: right;
-		}
+      form {
+        margin: 2em 0;
+      }
 
-		form {
-			margin: 2em 0;
-		}
+      * + label {
+        display: block;
+        margin-top: 1em;
+      }
+    </style>
+  </head>
 
-		*+label {
-			display: block;
-			margin-top: 1em;
-		}
-	</style>
-</head>
-
-<body>
-	<div class="forms">
-		<label>Enabled<input type='checkbox' checked></label>
-		<form>
-			<fieldset>
-				<label for='simple'>Simple</label>
-				<input id='simple' type='text' value='tag1,tag33'>
-				<span class='value'></span>
-			</fieldset>
-			<fieldset>
-				<label for='dups'>Duplicates allowed</label>
-				<input id='dups' type='text' data-separator='.:' data-allow-duplicates='true'
-					placeholder="dot and colon as separators">
-				<span class='value'></span>
-			</fieldset>
-			<fieldset>
-				<label for='typeahead'>Continents</label>
-				<input id='typeahead' type='text' list='continents' autocomplete='off'>
-				<span class='value'></span>
-				<datalist id='continents'>
-					<option value='Africa'>
-					<option value='Antarctica'>
-					<option value='Asia'>
-					<option value='Europe'>
-					<option value='North America'>
-					<option value='Oceania'>
-					<option value='South America'>
-				</datalist>
-			</fieldset>
-			<fieldset>
-				<label for='email'>Email</label>
-				<input id='email' type='email' data-separator=' ,;' placeholder="space, comma, or semicolon">
-				<span class='value'></span>
-			</fieldset>
-			<fieldset>
-				<label for='url'>URL</label>
-				<input id='url' type='url' data-separator=' '>
-				<span class='value'></span>
-			</fieldset>
-		</form>
-		<form id="patternForm">
-			<label for='pattern'>Input validation (required, pattern)</label>
-			<input id='pattern' type='text' name="country" pattern="[A-Za-z]{3}" required="required"
-				placeholder="Enter three letter country codes">
-			<span class='value'></span>
-		</form>
-		<input type="submit" form="patternForm" value="Submit countries">
-	</div>
-	<script type="text/javascript">
-	</script>
-</body>
-
+  <body>
+    <div class="forms">
+      <label>Enabled<input type="checkbox" checked /></label>
+      <form>
+        <fieldset>
+          <label for="simple">Simple</label>
+          <input id="simple" type="text" value="tag1,tag33" />
+          <span class="value"></span>
+        </fieldset>
+        <fieldset>
+          <label for="dups">Duplicates allowed</label>
+          <input
+            id="dups"
+            type="text"
+            data-separator=".:"
+            data-allow-duplicates="true"
+            placeholder="dot and colon as separators"
+          />
+          <span class="value"></span>
+        </fieldset>
+        <fieldset>
+          <label for="typeahead">Continents</label>
+          <input id="typeahead" type="text" list="continents" autocomplete="off" />
+          <span class="value"></span>
+          <datalist id="continents">
+            <option value="Africa"></option>
+            <option value="Antarctica"></option>
+            <option value="Asia"></option>
+            <option value="Europe"></option>
+            <option value="North America"></option>
+            <option value="Oceania"></option>
+            <option value="South America"></option>
+          </datalist>
+        </fieldset>
+        <fieldset>
+          <label for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            data-separator=" ,;"
+            placeholder="space, comma, or semicolon"
+          />
+          <span class="value"></span>
+        </fieldset>
+        <fieldset>
+          <label for="url">URL</label>
+          <input id="url" type="url" data-separator=" " />
+          <span class="value"></span>
+        </fieldset>
+      </form>
+      <form id="patternForm">
+        <label for="pattern">Input validation (required, pattern)</label>
+        <input
+          id="pattern"
+          type="text"
+          name="country"
+          pattern="[A-Za-z]{3}"
+          required="required"
+          placeholder="Enter three letter country codes"
+        />
+        <span class="value"></span>
+      </form>
+      <input type="submit" form="patternForm" value="Submit countries" />
+    </div>
+    <script type="text/javascript"></script>
+  </body>
 </html>
