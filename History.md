@@ -1,4 +1,11 @@
 
+4.0.1 / 2026-02-23
+==================
+
+ * update github actions
+ * upgrade `biome` to 2.4.4
+ * remove broken Readme badge
+
 4.0.0 / 2025-04-29
 ==================
 

@@ -1,6 +1,6 @@
 {
   "name": "@pirxpilot/tags-input",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "type": "module",
   "exports": "./src/tags-input.js",
   "description": "Input field for tagged values",
